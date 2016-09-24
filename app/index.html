@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>川崎市犯罪分析</title>
+        <link rel="stylesheet" href="./libs/c3.min.css">
+    </head>
+    <body>
+        <h1>川崎犯罪分析</h1>
+        <input type="date" id="from" min="2013-04-01" max="2016-03-31" value="2015-04-01">
+        <input type="date" id="to" min="2013-04-01" max="2016-03-31" value="2015-04-30">
+        <input type="button" value="更新" id="update-graph"> <br>
+        <input type="button" value="月別表示" id="graph-monthly">
+        <div id="chart"></div>
+        <script src="https://d3js.org/d3.v3.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="./libs/c3.min.js"></script>
+        <script src="hanzai.js"></script>
+    </body>
+</html>
